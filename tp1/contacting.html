@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Page title</title>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/app.css" />
+    </head>
+    <body>
+        <header class="bg-dark-gray">
+            <section class="presentation">
+                <img class="too-tall" src="img/8-neYbKxasY01VXBK.png" alt="Icon of the page" />
+                <h2>Moonrise</h2>
+            </section>
+            <section class="travel">
+                <nav>
+                    <div>
+                        <h4><a class="travel" href="index.html">Accueil</a></h4>
+                    </div>
+                    <div>
+                        <h4><a class="travel" href="gallery.html">Galerie</a></h4>
+                    </div>
+                    <div>
+                        <h4><a class="current travel" href="contacting.html">Contactez-nous</a></h4>
+                    </div>
+                </nav>
+            </section>
+        </header>
+
+        <main>
+            <form method="post">
+                <label for="firstName-input">Nom complet : </label>
+                <input class="info_contact" type="text" name="firstName" id="firstName-input" required />
+
+                <label for="email-input">Address Courriel :</label>
+                <input type="email" name="email" id="email-input" required placeholder="exemple@gmail.com" />
+
+                <label for="subject-option">Sujet : </label>
+                <select id="subject" name="subject-option" required>
+                    <option value="Su" selected>Support</option>
+                    <option value="Po">Postuler</option>
+                    <option value="Au">Autre</option>
+                </select>
+                <label for="message-input">Message:</label>
+                <input class="bigger" type="text" name="message" id="message-input" />
+                <label for="update-check">Recevoir notre infolettre :</label>
+                <input class="start-grid" type="checkbox" name="update" id="update-check" checked />
+                <div class="flex-side">
+                    <input type="radio" name="subscription-setting" id="weekly-update" value="week" checked />
+                    <label for="weekly">Hebdomadaire</label>
+
+                    <input type="radio" name="subscription-setting" id="monthly-update" value="month" />
+                    <label for="monthly">Mensuel</label>
+
+                    <input type="radio" name="subscription-setting" id="annual-check-up" value="year" />
+                    <label for="annual">Annuel</label>
+                </div>
+                <button type="submit">Envoyer</button>
+            </form>
+        </main>
+
+        <footer class="bg-dark-gray side-by-side txt-gray">
+            <p>Moonrise -</p>
+            <a href="contacting.html">Contactez-nous</a>
+            <p>- @ 2025 Andy Frongillo</p>
+        </footer>
+    </body>
+</html>
